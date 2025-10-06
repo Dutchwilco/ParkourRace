@@ -1,0 +1,77 @@
+# ParkourRace Configuration
+
+# Timer settings
+timer:
+  # Update interval for action bar (in ticks, 20 = 1 second)
+  update-interval: 10
+  # Format: {time} will be replaced with formatted time
+  format: "&e⏱ &f{time}"
+
+# Plate settings
+plates:
+  start:
+    material: LIGHT_WEIGHTED_PRESSURE_PLATE
+    particle: FLAME
+  checkpoint:
+    material: STONE_PRESSURE_PLATE
+    particle: VILLAGER_HAPPY
+  finish:
+    material: HEAVY_WEIGHTED_PRESSURE_PLATE
+    particle: FIREWORK
+
+# Items given during parkour
+items:
+  retry:
+    enabled: true
+    slot: 0
+    material: ENDER_PEARL
+    name: "&e&lRetry &7(Right Click)"
+    lore:
+      - "&7Teleport to your last checkpoint"
+  leave:
+    enabled: true
+    slot: 8
+    material: RED_BED
+    name: "&c&lLeave Parkour &7(Right Click)"
+    lore:
+      - "&7Exit the parkour course"
+
+# Title messages
+titles:
+  enabled: true  # Set to false to disable all titles
+  start:
+    enabled: true
+    title: "&a&lGO!"
+    subtitle: "&7Good luck!"
+    fade-in: 10
+    stay: 30
+    fade-out: 10
+  checkpoint:
+    enabled: true
+    title: "&e&lCheckpoint!"
+    subtitle: "&7Progress saved"
+    fade-in: 5
+    stay: 20
+    fade-out: 5
+  finish:
+    enabled: true
+    title: "&6&lFINISH!"
+    subtitle: "&7Time: {time}"
+    fade-in: 10
+    stay: 40
+    fade-out: 10
+  personal-best:
+    enabled: true
+    title: "&d&lNEW RECORD!"
+    subtitle: "&7Previous: {old} → {new}"
+    fade-in: 10
+    stay: 40
+    fade-out: 10
+
+# Sound effects
+sounds:
+  start: BLOCK_NOTE_PLING
+  checkpoint: ENTITY_EXPERIENCE_ORB_PICKUP
+  finish: UI_TOAST_CHALLENGE_COMPLETE
+  personal-best: ENTITY_PLAYER_LEVELUP
+  retry: ENTITY_ENDERMAN_TELEPORT

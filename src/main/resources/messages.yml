@@ -1,0 +1,53 @@
+# ParkourRace Messages
+
+prefix: "&8[&eParkourRace&8]&r"
+
+# General messages
+no-permission: "{prefix} &cYou don't have permission to do that."
+player-only: "{prefix} &cThis command can only be used by players."
+course-not-found: "{prefix} &cCourse '{course}' not found."
+already-in-course: "{prefix} &cYou are already in a parkour course!"
+not-in-course: "{prefix} &cYou are not in a parkour course."
+
+# Setup messages
+setup-started: "{prefix} &aSetup mode started for course '&e{course}&a'. Step on plates to record the route."
+setup-info: "{prefix} &7Gold plate = Start, Stone plate = Checkpoint, Iron plate = Finish"
+setup-start-added: "{prefix} &aStart point set!"
+setup-checkpoint-added: "{prefix} &aCheckpoint #{number} added!"
+setup-finish-added: "{prefix} &aFinish point set!"
+setup-need-start: "{prefix} &cYou must set a start point first (gold plate)."
+setup-need-finish: "{prefix} &cYou need at least a start and finish point."
+setup-saved: "{prefix} &aCourse '&e{course}&a' saved with {checkpoints} checkpoint(s)!"
+setup-cancelled: "{prefix} &eSetup cancelled."
+setup-already-exists: "{prefix} &cA course with that name already exists."
+
+# Course management
+course-deleted: "{prefix} &aCourse '&e{course}&a' deleted."
+course-list-header: "{prefix} &aAvailable courses:"
+course-list-entry: "&8 - &e{course} &7({checkpoints} checkpoints)"
+course-list-empty: "{prefix} &cNo courses available."
+
+# Parkour messages
+joined-course: "{prefix} &aJoined course '&e{course}&a'. Step on the gold plate to start!"
+left-course: "{prefix} &eYou left the parkour course &e{course}&e."
+timer-started: "{prefix} &aTimer started for &e{course}&a! Go!"
+checkpoint-reached: "{prefix} &aCheckpoint &e#{number}&a reached!"
+course-completed: "{prefix} &a&lCourse completed in &e&l{time}&a&l!"
+new-personal-best: "{prefix} &d&lNEW PERSONAL BEST! &7(Previous: {old})"
+first-completion: "{prefix} &6&lFirst completion of this course!"
+
+# Retry messages
+retry-teleport: "{prefix} &aTeleported to your last checkpoint."
+retry-no-checkpoint: "{prefix} &cNo checkpoint reached yet. Teleporting to start."
+retry-cooldown: "{prefix} &cPlease wait {time} before using retry again."
+
+# Best times
+best-header: "{prefix} &aYour personal bests:"
+best-entry: "&8 - &e{course}&8: &f{time}"
+best-none: "{prefix} &cYou haven't completed any courses yet."
+best-single: "{prefix} &aYour best time for '&e{course}&a': &f{time}"
+best-no-record: "{prefix} &cYou haven't completed '&e{course}&c' yet."
+
+# Error messages
+teleport-failed: "{prefix} &cFailed to teleport. Location may be unsafe."
+data-save-failed: "{prefix} &cFailed to save data. Check console for errors."

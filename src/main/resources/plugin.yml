@@ -1,0 +1,22 @@
+name: ParkourRace
+version: ${project.version}
+main: nl.dutchcoding.parkourrace.ParkourRace
+api-version: '1.21'
+author: Dutchwilco
+website: dutchcoding.nl
+description: Pressure plate parkour racing plugin
+softdepend: [PlaceholderAPI]
+
+commands:
+  parkour:
+    description: Main parkour command
+    aliases: [pk, pr]
+    usage: /<command> <subcommand>
+
+permissions:
+  parkourrace.admin:
+    description: Access to admin commands
+    default: op
+  parkourrace.use:
+    description: Access to use parkour courses
+    default: true
